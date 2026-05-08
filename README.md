@@ -1,4 +1,4 @@
-# CarbonWise — Lifecycle Vehicle Emissions Intelligence 
+# CarbonWise — Lifecycle Vehicle Emissions Intelligence
 
 
 > "Google Flights for sustainable cars" — full lifecycle CO₂ comparison platform with EPA + EEA data pipeline.
