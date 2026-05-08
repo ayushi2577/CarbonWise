@@ -1,0 +1,21 @@
+vehicle_key,make,model,year,fuel_type,city_mpg,highway_mpg,combined_mpg,co2_tailpipe_gpm,annual_fuel_cost_usd,ghg_score,air_pollution_score,source
+nexon-ev,Tata,Nexon EV,2024,EV,,,equiv_89mpge,0,600,10,7,EPA LCAT Tool 2023
+mg-zs-ev,MG,ZS EV,2024,EV,,,equiv_79mpge,0,700,10,7,EPA LCAT Tool 2023
+tiago-ev,Tata,Tiago EV,2024,EV,,,equiv_94mpge,0,520,10,7,EPA LCAT Tool 2023
+byd-atto3,BYD,Atto 3,2024,EV,,,equiv_76mpge,0,750,10,7,EPA LCAT Tool 2023
+tesla-model3,Tesla,Model 3 LR,2024,EV,134,126,131,0,550,10,7,EPA 2023 fueleconomy.gov
+tigor-ev,Tata,Tigor EV,2024,EV,,,equiv_85mpge,0,580,10,7,EPA LCAT Tool 2023
+comet-ev,MG,Comet EV,2024,EV,,,equiv_102mpge,0,480,10,7,EPA LCAT Tool 2023
+kia-ev6,Kia,EV6,2024,EV,132,117,125,0,600,10,7,EPA 2023 fueleconomy.gov
+prius,Toyota,Prius Prime,2024,HEV,57,56,57,100,750,8,6,EPA 2023 fueleconomy.gov
+city-hybrid,Honda,City Hybrid,2024,HEV,48,44,46,130,950,7,6,EPA LCAT Tool 2023
+vitara-hybrid,Maruti,Grand Vitara Hybrid,2024,HEV,42,39,40,150,1050,7,6,EPA LCAT Tool 2023
+camry-hybrid,Toyota,Camry Hybrid,2024,HEV,51,53,52,113,850,8,6,EPA 2023 fueleconomy.gov
+hycross,Toyota,Innova Hycross HEV,2024,HEV,38,36,37,165,1100,7,6,EPA LCAT Tool 2023
+swift,Maruti,Swift,2024,Gasoline,45,53,48,180,1200,6,5,EPA LCAT Tool 2023
+creta,Hyundai,Creta,2024,Gasoline,28,34,30,295,1950,4,4,EPA LCAT Tool 2023
+innova,Toyota,Innova Crysta,2024,Diesel,22,27,24,245,1600,4,4,EPA LCAT Tool 2023
+brezza,Maruti,Brezza,2024,Gasoline,34,40,37,245,1550,5,4,EPA LCAT Tool 2023
+seltos,Kia,Seltos,2024,Gasoline,29,35,32,275,1800,4,4,EPA LCAT Tool 2023
+fortuner,Toyota,Fortuner,2024,Diesel,18,22,20,290,1950,3,3,EPA LCAT Tool 2023
+scorpio-n,Mahindra,Scorpio N,2024,Diesel,19,24,21,310,2000,3,3,EPA LCAT Tool 2023

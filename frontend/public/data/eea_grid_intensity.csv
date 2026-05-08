@@ -1,0 +1,68 @@
+region_key,region_label,region_type,country,intensity_kg_co2_per_kwh,renewable_share_pct,fossil_share_pct,nuclear_share_pct,year,source,source_url,notes
+MH,Maharashtra,india_state,India,0.82,18.5,77.0,0,2023,CEA National Electricity Plan 2023,cea.nic.in/reports/nep2023,high_thermal_coal_dependency
+JH,Jharkhand,india_state,India,1.10,3.2,96.8,0,2023,CEA National Electricity Plan 2023,cea.nic.in/reports/nep2023,highest_coal_intensity_in_india
+MP,Madhya Pradesh,india_state,India,0.96,12.4,87.6,0,2023,CEA National Electricity Plan 2023,cea.nic.in/reports/nep2023,significant_coal_plants
+DL,Delhi,india_state,India,0.78,8.9,91.1,0,2023,CEA National Electricity Plan 2023,cea.nic.in/reports/nep2023,grid_import_heavy
+RJ,Rajasthan,india_state,India,0.85,28.7,71.3,0,2023,CEA National Electricity Plan 2023,cea.nic.in/reports/nep2023,growing_solar_capacity
+UP,Uttar Pradesh,india_state,India,0.90,14.2,85.8,0,2023,CEA National Electricity Plan 2023,cea.nic.in/reports/nep2023,highest_power_demand_state
+GJ,Gujarat,india_state,India,0.75,31.4,68.6,0,2023,CEA National Electricity Plan 2023,cea.nic.in/reports/nep2023,strong_solar_and_wind
+TN,Tamil Nadu,india_state,India,0.62,38.9,61.1,0,2023,CEA National Electricity Plan 2023,cea.nic.in/reports/nep2023,wind_energy_leader
+KA,Karnataka,india_state,India,0.55,44.2,55.8,0,2023,CEA National Electricity Plan 2023,cea.nic.in/reports/nep2023,solar_and_hydro_mix
+KL,Kerala,india_state,India,0.18,72.1,27.9,0,2023,CEA National Electricity Plan 2023,cea.nic.in/reports/nep2023,hydro_dominant
+HP,Himachal Pradesh,india_state,India,0.12,89.4,10.6,0,2023,CEA National Electricity Plan 2023,cea.nic.in/reports/nep2023,hydro_dominant_cleanest_state
+UK,Uttarakhand,india_state,India,0.15,85.2,14.8,0,2023,CEA National Electricity Plan 2023,cea.nic.in/reports/nep2023,run_of_river_hydro
+PB,Punjab,india_state,India,0.70,22.3,77.7,0,2023,CEA National Electricity Plan 2023,cea.nic.in/reports/nep2023,thermal_coal_base
+WB,West Bengal,india_state,India,0.88,9.1,90.9,0,2023,CEA National Electricity Plan 2023,cea.nic.in/reports/nep2023,coal_heavy_DVC_grid
+AP,Andhra Pradesh,india_state,India,0.68,35.6,64.4,0,2023,CEA National Electricity Plan 2023,cea.nic.in/reports/nep2023,solar_growth_region
+TS,Telangana,india_state,India,0.72,28.9,71.1,0,2023,CEA National Electricity Plan 2023,cea.nic.in/reports/nep2023,coal_and_gas_mix
+OR,Odisha,india_state,India,0.95,10.2,89.8,0,2023,CEA National Electricity Plan 2023,cea.nic.in/reports/nep2023,coal_surplus_state
+GA,Goa,india_state,India,0.60,18.4,81.6,0,2023,CEA National Electricity Plan 2023,cea.nic.in/reports/nep2023,grid_import_from_WR
+norway,Norway,country,Norway,0.02,97.8,1.2,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,hydro_dominant_world_leader
+france,France,country,France,0.06,24.3,8.2,67.5,2023,IEA Electricity 2023,iea.org/data-and-statistics,nuclear_dominant
+switzerland,Switzerland,country,Switzerland,0.07,60.1,2.1,37.8,2023,IEA Electricity 2023,iea.org/data-and-statistics,hydro_and_nuclear
+sweden,Sweden,country,Sweden,0.08,58.4,1.1,40.5,2023,IEA Electricity 2023,iea.org/data-and-statistics,hydro_and_nuclear
+austria,Austria,country,Austria,0.14,71.2,18.8,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,hydro_and_wind
+portugal,Portugal,country,Portugal,0.18,61.3,38.7,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,wind_and_hydro
+spain,Spain,country,Spain,0.22,54.8,35.4,9.8,2023,IEA Electricity 2023,iea.org/data-and-statistics,renewables_growing
+denmark,Denmark,country,Denmark,0.19,74.2,25.8,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,offshore_wind_champion
+finland,Finland,country,Finland,0.12,56.8,5.6,37.6,2023,IEA Electricity 2023,iea.org/data-and-statistics,hydro_nuclear_and_wind
+germany,Germany,country,Germany,0.38,52.1,47.9,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,nuclear_exit_coal_still_significant
+uk,United Kingdom,country,United Kingdom,0.23,41.5,42.1,16.4,2023,IEA Electricity 2023,iea.org/data-and-statistics,wind_growing_fast
+ireland,Ireland,country,Ireland,0.31,42.8,57.2,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,wind_and_gas
+netherlands,Netherlands,country,Netherlands,0.28,38.4,61.6,3.0,2023,IEA Electricity 2023,iea.org/data-and-statistics,gas_and_wind
+belgium,Belgium,country,Belgium,0.17,27.2,10.9,61.9,2023,IEA Electricity 2023,iea.org/data-and-statistics,nuclear_dominant
+italy,Italy,country,Italy,0.29,41.2,58.8,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,gas_dominant
+greece,Greece,country,Greece,0.39,36.4,63.6,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,coal_and_gas
+poland,Poland,country,Poland,0.72,18.2,81.8,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,coal_dominant_EU_laggard
+czechia,Czechia,country,Czechia,0.41,15.3,37.5,47.2,2023,IEA Electricity 2023,iea.org/data-and-statistics,nuclear_and_coal
+romania,Romania,country,Romania,0.26,45.8,24.6,29.6,2023,IEA Electricity 2023,iea.org/data-and-statistics,hydro_nuclear_wind
+ukraine,Ukraine,country,Ukraine,0.35,12.8,30.1,57.1,2023,IEA Electricity 2023,iea.org/data-and-statistics,nuclear_war_impacted_grid
+turkey,Turkey,country,Turkey,0.46,42.1,57.9,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,gas_and_coal
+usa,USA,country,United States,0.42,21.4,60.5,18.1,2023,EPA eGRID 2023,epa.gov/egrid,national_average_varies_by_state
+canada,Canada,country,Canada,0.14,68.2,18.6,13.2,2023,IEA Electricity 2023,iea.org/data-and-statistics,hydro_dominant
+brazil,Brazil,country,Brazil,0.09,88.7,11.3,2.5,2023,IEA Electricity 2023,iea.org/data-and-statistics,hydro_dominant
+mexico,Mexico,country,Mexico,0.46,28.4,71.6,3.5,2023,IEA Electricity 2023,iea.org/data-and-statistics,gas_and_oil
+argentina,Argentina,country,Argentina,0.31,34.5,65.5,8.2,2023,IEA Electricity 2023,iea.org/data-and-statistics,gas_and_renewables
+chile,Chile,country,Chile,0.28,49.1,50.9,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,solar_boom_atacama
+colombia,Colombia,country,Colombia,0.17,68.9,31.1,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,hydro_dominant
+china,China,country,China,0.61,31.6,68.4,4.9,2023,IEA Electricity 2023,iea.org/data-and-statistics,coal_dominant_renewables_growing_fast
+japan,Japan,country,Japan,0.47,22.4,69.8,9.9,2023,IEA Electricity 2023,iea.org/data-and-statistics,post_fukushima_LNG_heavy
+south_korea,South Korea,country,South Korea,0.44,9.4,62.8,27.8,2023,IEA Electricity 2023,iea.org/data-and-statistics,coal_and_nuclear
+singapore,Singapore,country,Singapore,0.41,4.2,95.8,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,LNG_import_dependent
+thailand,Thailand,country,Thailand,0.52,12.4,87.6,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,gas_and_coal
+vietnam,Vietnam,country,Vietnam,0.55,42.8,57.2,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,hydro_and_coal
+indonesia,Indonesia,country,Indonesia,0.71,14.2,85.8,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,coal_dominant
+malaysia,Malaysia,country,Malaysia,0.63,22.1,77.9,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,gas_and_coal
+bangladesh,Bangladesh,country,Bangladesh,0.59,4.1,95.9,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,gas_dominant
+pakistan,Pakistan,country,Pakistan,0.45,38.7,61.3,8.4,2023,IEA Electricity 2023,iea.org/data-and-statistics,hydro_and_gas
+sri_lanka,Sri Lanka,country,Sri Lanka,0.38,42.1,57.9,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,hydro_and_fuel_oil
+uae,UAE,country,UAE,0.40,7.8,92.2,5.6,2023,IEA Electricity 2023,iea.org/data-and-statistics,gas_with_Barakah_nuclear
+saudi,Saudi Arabia,country,Saudi Arabia,0.68,1.2,98.8,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,oil_and_gas_dominant
+israel,Israel,country,Israel,0.43,12.4,87.6,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,natural_gas
+south_africa,South Africa,country,South Africa,0.92,12.8,87.2,6.1,2023,IEA Electricity 2023,iea.org/data-and-statistics,Eskom_coal_dominant
+nigeria,Nigeria,country,Nigeria,0.43,22.1,77.9,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,gas_and_hydro
+kenya,Kenya,country,Kenya,0.04,91.8,8.2,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,geothermal_and_hydro_champion
+egypt,Egypt,country,Egypt,0.48,11.4,88.6,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,gas_dominant_Aswan_hydro
+australia,Australia,country,Australia,0.55,32.4,67.6,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,coal_and_growing_solar
+new_zealand,New Zealand,country,New Zealand,0.10,84.2,15.8,0,2023,IEA Electricity 2023,iea.org/data-and-statistics,geothermal_and_hydro
+india,India (national avg),country,India,0.82,20.1,79.9,2.5,2023,CEA Annual Report 2023,cea.nic.in,national_average_use_state_for_accuracy

@@ -1,0 +1,21 @@
+vehicle_key,make,model,year,vehicle_segment,manufacturing_co2_tonnes,battery_kwh,battery_disposal_co2_tonnes,battery_disposal_method,kwh_per_100km_arai,litres_per_100km_arai,kwh_per_100km_realworld,litres_per_100km_realworld,realworld_factor_applied,co2_per_km_tailpipe_g,lifecycle_methodology,lca_standard,mfg_emission_source,battery_emission_source,notes
+nexon-ev,Tata,Nexon EV,2024,B-SUV,12.0,30.2,4.228,hydrometallurgical_recycling,11.2,,,14.0,,0,full_LCA,ISO_14040_14044,EEA_2023_doi10.2760/141427,Ellingsen_et_al_2016_doi10.1021/acs.est.5b05076,battDisp=0.14t_CO2_per_kWh_net_EEA_2021
+mg-zs-ev,MG,ZS EV,2024,C-SUV,14.2,50.3,7.042,hydrometallurgical_recycling,12.16,,,15.2,,0,full_LCA,ISO_14040_14044,EEA_2023_doi10.2760/141427,Ellingsen_et_al_2016_doi10.1021/acs.est.5b05076,battDisp=0.14t_CO2_per_kWh_net_EEA_2021
+tiago-ev,Tata,Tiago EV,2024,A-hatchback,9.8,19.2,2.688,hydrometallurgical_recycling,10.48,,,13.1,,0,full_LCA,ISO_14040_14044,EEA_2023_doi10.2760/141427,Ellingsen_et_al_2016_doi10.1021/acs.est.5b05076,battDisp=0.14t_CO2_per_kWh_net_EEA_2021
+byd-atto3,BYD,Atto 3,2024,C-SUV,15.1,60.5,8.47,LFP_direct_recycling,12.8,,,16.0,,0,full_LCA,ISO_14040_14044,EEA_2023_doi10.2760/141427,Romare_Dahlof_2017_IVL_Report_C243,LFP_chemistry_lower_cobalt_intensity
+tesla-model3,Tesla,Model 3 LR,2024,D-sedan,16.0,75.0,10.5,Tesla_closed_loop_recycling,10.56,,,13.2,,0,full_LCA,ISO_14040_14044,Tesla_Impact_Report_2022,Tesla_Impact_Report_2022,Tesla_proprietary_LCA_third_party_verified
+tigor-ev,Tata,Tigor EV,2024,B-sedan,11.0,26.0,3.64,hydrometallurgical_recycling,11.52,,,14.4,,0,full_LCA,ISO_14040_14044,EEA_2023_doi10.2760/141427,EEA_Report_No14_2021,battDisp=0.14t_CO2_per_kWh_net
+comet-ev,MG,Comet EV,2024,A-microcar,8.0,17.3,2.422,hydrometallurgical_recycling,9.04,,,11.3,,0,full_LCA,ISO_14040_14044,EEA_2023_doi10.2760/141427,EEA_Report_No14_2021,smallest_EV_lowest_mfg_footprint
+kia-ev6,Kia,EV6,2024,D-crossover,18.0,77.4,10.836,hydrometallurgical_recycling,11.52,,,14.4,,0,full_LCA,ISO_14040_14044,EEA_2023_doi10.2760/141427,Romare_Dahlof_2017_IVL_Report_C243,E-GMP_platform_LCA_Kia_2022
+prius,Toyota,Prius Prime,2024,C-sedan,7.8,8.8,1.232,NiMH_recycling_Toyota_program,,,,,2.8,70,full_LCA,ISO_14040_14044,Toyota_LCA_2022_CSR_Report,EPA_2021_PHEV_battery_guidance,PHEV_real_world_4.2L_blended
+city-hybrid,Honda,City Hybrid,2024,C-sedan,7.2,1.3,0.182,NiMH_in_house_recycling,,,,,3.39,84.5,full_LCA,ISO_14040_14044,Honda_LCA_2021_Sustainability_Report,EPA_2021_HEV_battery_guidance,mild_hybrid_ISG_system
+vitara-hybrid,Maruti,Grand Vitara Hybrid,2024,C-SUV,8.9,1.3,0.182,NiMH_OEM_partner_recycling,,,,,4.07,100.6,full_LCA,ISO_14040_14044,Suzuki_CSR_2023,EPA_2021_HEV_battery_guidance,strong_hybrid_Toyota_tech_licensed
+camry-hybrid,Toyota,Camry Hybrid,2024,D-sedan,10.2,6.5,0.91,NiMH_recycling_Toyota_program,,,,,3.56,88.7,full_LCA,ISO_14040_14044,Toyota_LCA_2022_CSR_Report,EPA_2021_PHEV_battery_guidance,5th_gen_THS_II_system
+hycross,Toyota,Innova Hycross HEV,2024,D-MPV,11.0,3.2,0.448,NiMH_recycling_Toyota_program,,,,,4.32,107.5,full_LCA,ISO_14040_14044,Toyota_LCA_2022_CSR_Report,EPA_2021_HEV_battery_guidance,FWDMPV_no_diesel_option
+swift,Maruti,Swift,2024,B-hatchback,5.1,0,0,,,,,,5.08,126.3,tailpipe_only,Euro6_equivalent,EEA_fleet_avg_2023_CO2_regulation,N/A,ICE_no_battery_disposal
+creta,Hyundai,Creta,2024,C-SUV,6.3,0,0,,,,,,7.63,190.0,tailpipe_only,Euro6_equivalent,EEA_fleet_avg_2023_CO2_regulation,N/A,1.5L_petrol_turbo
+innova,Toyota,Innova Crysta,2024,D-MPV,7.4,0,0,,,,,,9.41,185.0,tailpipe_only,Euro6_equivalent,EEA_fleet_avg_2023_CO2_regulation,N/A,2.4L_diesel_BS6
+brezza,Maruti,Brezza,2024,B-SUV,5.4,0,0,,,,,,6.44,160.3,tailpipe_only,Euro6_equivalent,EEA_fleet_avg_2023_CO2_regulation,N/A,1.5L_petrol_mild_hybrid
+seltos,Kia,Seltos,2024,C-SUV,6.1,0,0,,,,,,7.12,177.2,tailpipe_only,Euro6_equivalent,EEA_fleet_avg_2023_CO2_regulation,N/A,1.5L_petrol_turbo
+fortuner,Toyota,Fortuner,2024,E-SUV,9.0,0,0,,,,,,10.0,197.9,tailpipe_only,Euro6_equivalent,EEA_fleet_avg_2023_CO2_regulation,N/A,2.8L_diesel_4x4
+scorpio-n,Mahindra,Scorpio N,2024,D-SUV,8.0,0,0,,,,,,9.15,215.5,tailpipe_only,Euro6_equivalent,EEA_fleet_avg_2023_CO2_regulation,N/A,2.2L_diesel_mHawk
