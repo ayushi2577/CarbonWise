@@ -41,7 +41,7 @@ export default function Footer() {
               <li><Link to="/about" className="footer__link">About &amp; Team</Link></li>
               <li>
                 <a
-                  href="https://github.com/reshmicc/carbonwise"
+                  href="https://github.com/ayushi2577/CarbonWise"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer__link"
@@ -57,7 +57,7 @@ export default function Footer() {
           <span className="footer__copy" style={{ display: 'flex', alignItems: 'center', gap: 6 }}>© 2026 CarbonWise <Globe size={13} /> India's honest lifecycle emissions tool</span>
           <div style={{ display: 'flex', gap: 12 }}>
             <a
-              href="https://github.com/reshmicc/carbonwise"
+              href="https://github.com/ayushi2577/CarbonWise"
               target="_blank"
               rel="noopener noreferrer"
               style={{
