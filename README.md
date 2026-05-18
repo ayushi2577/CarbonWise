@@ -8,13 +8,13 @@
 [![Data](https://img.shields.io/badge/Data-EPA%20%2F%20EEA%20%2F%20CEA-2ea44f?style=flat-square&logo=databricks&logoColor=white)](https://www.eea.europa.eu)
 [![AI](https://img.shields.io/badge/AI-Groq%20LLaMA-FF6B35?style=flat-square&logo=meta&logoColor=white)](https://console.groq.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square&logo=opensourceinitiative&logoColor=white)](LICENSE)
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-carbonwise.vercel.app-000000?style=flat-square&logo=vercel&logoColor=white)](https://carbonwise.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-carbonwise--ivew.onrender.com-46E3B7?style=flat-square&logo=render&logoColor=white)](https://carbonwise-ivew.onrender.com)
 
 ---
 
 ## Live Demo
 
-> **[carbonwise-brown.vercel.app](carbonwise-ivew.onrender.com)**
+> **[carbonwise-ivew.onrender.com](https://carbonwise-ivew.onrender.com)**
 
 ![CarbonWise Homepage](assets/a6.webp)
 
@@ -143,8 +143,6 @@ carbonwise/
 │       │   ├── AIChat.jsx              ← Floating Groq LLaMA assistant
 │       │   └── D3BreakevenChart.jsx    ← D3 crossover visualisation
 │       └── styles/globals.css      ← Full design system
-│
-└── vercel.json                 ← Vercel deploy config (proxies /api/* to Railway)
 ```
 
 ---
@@ -233,46 +231,78 @@ curl -X POST http://localhost:8000/api/greenwash/ \
 
 ---
 
+## Dependencies
 
+**Frontend (`frontend/package.json`)**
+
+| Package | Version | Purpose |
+|---------|---------|---------|
+| react | ^18 | UI framework |
+| react-dom | ^18 | DOM renderer |
+| react-router-dom | ^6 | Client-side routing |
+| framer-motion | latest | Animations |
+| d3 | latest | Breakeven chart |
+| chart.js | latest | Bar charts |
+| react-chartjs-2 | latest | Chart.js React wrapper |
+| papaparse | ^5.4 | CSV parsing |
+| vite | ^5 | Dev server + build |
+
+**Backend (`backend/requirements.txt`)**
+
+| Package | Purpose |
+|---------|---------|
+| django | Web framework + ORM |
+| djangorestframework | REST API |
+| django-cors-headers | CORS for frontend requests |
+| gunicorn | Production WSGI server |
+| groq | Groq LLaMA AI chat API |
+| python-dotenv | Environment variable loading |
+
+---
 
 ## Deploy to Render
 
-### Frontend - Static Site
+The app is deployed on [Render](https://render.com) as two services — a Static Site for the frontend and a Web Service for the backend.
 
-1. Go to render.com → New → Static Site
-2. Connect your GitHub repo
-3. Set Root Directory to frontend/, Build Command to npm install && npm run build, Publish Directory to dist
-4. Add a rewrite rule: Source /* → Destination /index.html (required for React Router)
-5. Add environment variable: VITE_API_URL=https://your-backend-name.onrender.com
-6. Deploy — you get a live HTTPS URL instantly
+### Backend — Web Service
 
-### Backend → Render Web Service
+1. Go to [render.com](https://render.com) → **New → Web Service** and connect your GitHub repo
+2. Set **Root Directory** to `backend/`
+3. Set **Build Command:** `pip install -r requirements.txt && python manage.py collectstatic --noinput`
+4. Set **Start Command:** `gunicorn carbonwise.wsgi:application`
+5. Add the following environment variables:
 
-1. Go to render.com → New → Web Service
-2. Connect the same repo, set Root Directory to backend/
-3. Build Command: pip install -r requirements.txt && python manage.py collectstatic --noinput
-4. Start Command: gunicorn carbonwise.wsgi:application
-5. Add environment variables:
-GROQ_API_KEY
-SECRET_KEY
-DEBUG
-ALLOWED_HOSTS
+| Key | Value |
+|-----|-------|
+| `GROQ_API_KEY` | Your key from [console.groq.com](https://console.groq.com) |
+| `SECRET_KEY` | Any long random string |
+| `DEBUG` | `False` |
+| `ALLOWED_HOSTS` | `your-backend-name.onrender.com` |
 
-6. Deploy — copy the generated URL into the frontend's VITE_API_URL
+6. Click **Create Web Service** and note the generated URL (e.g. `https://carbonwise-api.onrender.com`)
 
-The frontend already reads VITE_API_URL out of the box — no code changes needed. Unlike Vercel, Render doesn't proxy /api/* from frontend to backend, so this env var is required for production.
+### Frontend — Static Site
+
+1. Go to [render.com](https://render.com) → **New → Static Site** and connect the same repo
+2. Set **Root Directory** to `frontend/`, **Build Command** to `npm install && npm run build`, **Publish Directory** to `dist`
+3. Add a **Rewrite Rule**: Source `/*` → Destination `/index.html` (required for React Router)
+4. Add environment variable: `VITE_API_URL=https://your-backend-name.onrender.com`
+5. Deploy — the frontend is live at your Render static site URL
+
+> The frontend reads `VITE_API_URL` out of the box — no code changes needed.
+> **Note:** Free tier web services spin down after inactivity; the first API call after idle may take ~30 seconds.
 
 ---
 
 ## Configuration
 
-**Frontend** — create `frontend/.env.local`:
+**Frontend** — create `frontend/.env.local` for local development:
 
 ```bash
-VITE_API_URL=https://your-backend.up.railway.app
+VITE_API_URL=http://localhost:8000
 ```
 
-**Backend** — set in `backend/carbonwise/settings.py` or as environment variables:
+**Backend** — set in environment or `backend/carbonwise/settings.py`:
 
 ```python
 GROQ_API_KEY = 'gsk_your_key_here'   # free at console.groq.com
@@ -285,9 +315,17 @@ GROQ_API_KEY = 'gsk_your_key_here'   # free at console.groq.com
 - [ ] Add CMIP6 grid forecast — show how state grid intensities will shift by 2035
 - [ ] Add fleet mode — compare 5+ vehicles for fleet procurement decisions
 - [ ] Export comparison as PDF / shareable PNG card
-- [ ] Hindi + regional language support
 - [ ] Live OBD-II integration for real-world fuel economy logging
 - [ ] Carbon offset marketplace integration (verified projects only)
+
+---
+
+## Contributors
+
+Ayushi Agrawal
+Neha Malhotra
+Reshmi Yadav
+Jhalak Mittal
 
 ---
 
