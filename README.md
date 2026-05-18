@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-> **[carbonwise-brown.vercel.app](carbonwise-brown.vercel.app)**
+> **[carbonwise-brown.vercel.app](carbonwise-ivew.onrender.com)**
 
 ![CarbonWise Homepage](assets/a6.webp)
 
@@ -233,24 +233,34 @@ curl -X POST http://localhost:8000/api/greenwash/ \
 
 ---
 
-## Deploy to Vercel + Railway
 
-### Frontend → Vercel
 
-1. Push to a public GitHub repository
-2. Import at [vercel.com/new](https://vercel.com/new)
-3. Set build settings — build command: `cd frontend && npm install && npm run build`, output: `frontend/dist`
-4. Set environment variable: `VITE_API_URL=https://your-railway-backend.up.railway.app`
-5. Deploy — you get a live HTTPS URL instantly
+## Deploy to Render
 
-### Backend → Railway
+### Frontend - Static Site
 
-1. Go to [railway.app](https://railway.app) → New Project → Deploy from GitHub
-2. Set root directory to `backend/`
-3. Add environment variable: `GROQ_API_KEY=your_key`
-4. Railway auto-detects Django and deploys — copy the generated URL into Vercel's `VITE_API_URL`
+1. Go to render.com → New → Static Site
+2. Connect your GitHub repo
+3. Set Root Directory to frontend/, Build Command to npm install && npm run build, Publish Directory to dist
+4. Add a rewrite rule: Source /* → Destination /index.html (required for React Router)
+5. Add environment variable: VITE_API_URL=https://your-backend-name.onrender.com
+6. Deploy — you get a live HTTPS URL instantly
 
-> `vercel.json` in the repo root already rewrites `/api/*` to Railway, so CORS is handled transparently.
+### Backend → Render Web Service
+
+1. Go to render.com → New → Web Service
+2. Connect the same repo, set Root Directory to backend/
+3. Build Command: pip install -r requirements.txt && python manage.py collectstatic --noinput
+4. Start Command: gunicorn carbonwise.wsgi:application
+5. Add environment variables:
+GROQ_API_KEY
+SECRET_KEY
+DEBUG
+ALLOWED_HOSTS
+
+6. Deploy — copy the generated URL into the frontend's VITE_API_URL
+
+The frontend already reads VITE_API_URL out of the box — no code changes needed. Unlike Vercel, Render doesn't proxy /api/* from frontend to backend, so this env var is required for production.
 
 ---
 
